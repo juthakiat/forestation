@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <h:head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />        
+        <title>PTT Reforestation</title>        
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="resources/css/bootstrap-combobox.css" rel="stylesheet" />
+        <link href="resources/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+        <link href="resources/css/dataTables.bootstrap.css" rel="stylesheet" />
+        <link href="resources/css/default.css" rel="stylesheet" />
+    </h:head>
+
+    <h:body>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="row text-center">
+                    <ul class="top-menu">
+                        <li>
+                            <a class="thumbnail" href="#">
+                                <img class="img-circle pulse-grow" src="http://placehold.it/75x75&amp;text=1" />
+                            </a>
+                            <span>ทีมปลูก</span>
+                        </li>
+                        <li>
+                            <a class="thumbnail" href="#">
+                                <img class="img-circle pulse-grow" src="http://placehold.it/75x75&amp;text=2" />
+                            </a>
+                            <span>ทีมแผนและประเมินผล</span>
+                        </li>
+                        <li>
+                            <a class="thumbnail" href="#">
+                                <img class="img-circle pulse-grow" src="http://placehold.it/75x75&amp;text=3" />
+                            </a>
+                            <span>ทีมพัฒนา</span>
+                        </li>
+                        <li>
+                            <a class="thumbnail" href="#">
+                                <img class="img-circle pulse-grow" src="http://placehold.it/75x75&amp;text=4" />
+                            </a>
+                            <span>ทีมวิชาการ</span>
+                        </li>
+                        <li>
+                            <a class="thumbnail" href="#">
+                                <img class="img-circle pulse-grow" src="http://placehold.it/75x75&amp;text=5" />
+                            </a>
+                            <span>รายงานสรุป</span>
+                        </li>
+                        <li>
+                            <a class="thumbnail" href="#">
+                                <img class="img-circle pulse-grow" src="http://placehold.it/75x75&amp;text=6" />
+                            </a>
+                            <span>ผู้บริหาร</span>
+                        </li>
+                        <li>
+                            <a class="thumbnail" href="#">
+                                <img class="img-circle pulse-grow" src="http://placehold.it/75x75&amp;text=7" />
+                            </a>
+                            <span>แผนที่</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <p:ajaxStatus styleClass="loading">
+            <f:facet name="start">
+                  <p:graphicImage value="resources/images/ajax-loader.gif" />
+            </f:facet>
+        </p:ajaxStatus>
+        <h:messages styleClass="alert" errorClass="alert-error" warnClass="alert-warning" infoClass="alert-info" />
+        <ui:insert name="content">Content</ui:insert>            
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="resources/scripts/jquery.dataTables.min.js"></script>
+        <script src="resources/scripts/dataTables.bootstrap.js"></script>
+        <script src="resources/scripts/bootstrap.min.js"></script>
+        <script src="resources/scripts/bootstrap-combobox.js"></script>
+        <script src="resources/scripts/moment.js"></script>
+        <script src="resources/scripts/bootstrap-datetimepicker.js"></script>
+    </h:body>
+</html>

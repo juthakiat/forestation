@@ -1,0 +1,241 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./../templates/page-template.xhtml">
+
+    <style>
+            .carousel {
+                background: transparent;
+            }
+            .carousel-indicators {
+                bottom: -30px
+            }
+            .content-footer {
+                margin-top: 10px; 
+            }
+            .content-footer * {
+                border: none;
+                display: inline-block;
+                width: 49%;
+            }
+            .content-footer *:last-child {
+                text-align: right;
+            }
+        </style>
+
+    <!-- carousel --> 
+    <div id="carousel-news" class="carousel slide" data-ride="carousel">
+        <!-- indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-news" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-news" data-slide-to="2"></li> -->
+        </ol>
+
+        <!-- wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+
+                <!-- page1 -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- page1, block1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt1" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">โครงการปลูกป่าเฉลิมพระเกียรติ</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- page1, block2 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt2" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">จากกล้าต้นแรก</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- page1, block3 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt3" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">ปลูกป่าบก</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- page1, block4 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt4" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">ปลูกป่าชายเลน</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+            </div>
+
+            <div class="item">
+                <!-- page2 -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- page2, block1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt5" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">โครงการปลูกป่าเฉลิมพระเกียรติ</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- page2, block2 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt6" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">จากกล้าต้นแรก</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- page2, block3 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt7" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">ปลูกป่าบก</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- page2, block4 -->
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placehold.it/200x200&amp;text=evt8" />
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">ปลูกป่าชายเลน</h4>
+                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                            <div class="content-footer">
+                                                <a href="#">Read more &amp;#8230;</a>
+                                                <span>dd/MM/yyyy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+
+            <!--
+            <div class="item">
+                Content goes here ...
+            </div>
+            -->
+
+        </div>
+
+        <!-- controls -->
+        <!--
+        <a class="left carousel-control" href="#carousel-news" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-news" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        -->
+    </div>
+
+</div>

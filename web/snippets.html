@@ -1,0 +1,55 @@
+Input
+http://getbootstrap.com/components/#input-groups-basic
+<h:inputText styleClass="form-control" p:placeholder="ชื่อผู้รับจ้าง"></h:inputText>
+
+Combobox
+<!-- https://github.com/danielfarrell/bootstrap-combobox -->
+<h:selectOneMenu styleClass="combobox form-control" value="#{searchContractor.selectedPurchaseMethod}">
+    <f:selectItems value="#{searchContractor.purchaseMethods}" />
+</h:selectOneMenu>
+
+DatePicker
+<!-- http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+<div class="input-group date">
+    <h:inputText id="txtFromDate" styleClass="form-control">
+        <f:convertDateTime pattern="MM/dd/yyyy hh:mm" />
+    </h:inputText>
+    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+    </span>
+</div>
+
+DataTable
+<table class="datatable table table-striped table-bordered" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>เลขที่สัญญา</th>
+            <th>ลงวันที่</th>
+            <th>งาน</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ui:repeat var="row" value="#{searchContractor.results}" varStatus="status">
+        <tr>
+            <td><h:outputText value="#{row['contractId']}"/></td>
+            <td> <!-- display date -->
+                <h:outputText value="#{row['contractDate']}">
+                    <f:convertDateTime pattern="dd/MM/yyyy" />
+                </h:outputText>
+            </td>
+            <td> <!-- for the column you want to specify the column width -->
+                <div title="#{row['desc']}" style="width:350px"><h:outputText value="#{row['desc']}"/></div>
+            </td>
+        </tr>
+        </ui:repeat>
+    </tbody>
+</table>
+
+Panel
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Title</strong>
+    </div>
+    <div class="panel-body">
+    	Content
+    </div>
+</div>

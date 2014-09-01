@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Thai Sans';
+  src: url('../fonts/thaisans.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/thaisans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /* url('../fonts/thaisans.woff') format('woff'),  Modern Browsers */
+       url('../fonts/thaisans.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/thaisans.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body { 
+    background: url('../images/bg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*
+    font-family: 'Thai Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    */
+}
+
+#top {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+}
+
+.top-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.top-menu li {
+    display: inline-block;
+    width: 125px;
+}
+
+.top-menu li * {
+    margin: 0 auto;
+}
+
+.top-menu span {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spacer *:not(last-child) {
+    padding-right: 10px;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+.datatable div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.panel-default {
+    opacity: 0.9;
+    margin-top:30px;
+}
+.panel-body {
+    background-color: white;
+}
+
+.control-label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.form-group.last {
+    margin-bottom:0px;
+}
+
+.navbar-default {
+    background-color: rgba(255,255,255,0.5);
+    border-color: transparent;
+}
+
+.thumbnail {
+    background: transparent;
+    border: none;
+}		
+
+.nav-item {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.nav-item img {
+    margin: 0 auto;
+}
+
+.loading{
+    width:64px;
+    height:64px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-32px 0 0 -32px;
+    z-index: 99;
+}
+
+/* code from: https://github.com/IanLunn/Hover/blob/master/css/hover.css */
+/* Pulse Grow */
+@-webkit-keyframes pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@keyframes pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.pulse-grow {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-grow:hover, .pulse-grow:focus, .pulse-grow:active {
+    -webkit-animation-name: pulse-grow;
+    animation-name: pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
